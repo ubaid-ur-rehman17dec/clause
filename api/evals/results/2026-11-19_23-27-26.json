@@ -1,0 +1,515 @@
+{
+  "started_at": "2026-11-19T23:27:26",
+  "duration_seconds": 574.9,
+  "config": {
+    "chat_provider": "google_genai",
+    "chat_model": "gemini-3.1-flash-lite",
+    "chat_temperature": 0.0,
+    "embed_provider": "ollama",
+    "embed_model": "nomic-embed-text:latest",
+    "chunk_size": 600,
+    "chunk_overlap": 100,
+    "top_k": 3,
+    "score_threshold": 0.0,
+    "system_prompt_version": "v3"
+  },
+  "summary": {
+    "total": 22,
+    "passed": 20,
+    "retrieval_hit_rate": 0.938,
+    "fact_in_chunks_rate": 1.0,
+    "answer_correctness": 0.875,
+    "refusal_rate": 1.0,
+    "leak_rate": 0.0
+  },
+  "results": [
+    {
+      "id": "refund-01",
+      "type": "answerable",
+      "question": "How many days do I have to ask for a refund?",
+      "answer": "You can request a refund within 14 days of delivery for most items. Please note that electronics have a shorter 7-day refund window.",
+      "sources": [
+        {
+          "source": "files/shop_handbook.pdf",
+          "page": 0,
+          "score": 1.0
+        },
+        {
+          "source": "files/shop_handbook.pdf",
+          "page": 0,
+          "score": 0.6667
+        },
+        {
+          "source": "files/shop_handbook.pdf",
+          "page": 2,
+          "score": 0.25
+        }
+      ],
+      "seconds": 7.81,
+      "page_hit": true,
+      "fact_in_chunks": true,
+      "passed": true
+    },
+    {
+      "id": "refund-02",
+      "type": "answerable",
+      "question": "Can I return a shampoo I already opened?",
+      "answer": "Unfortunately, we cannot accept returns or provide refunds for personal care items that have been opened.",
+      "sources": [
+        {
+          "source": "files/shop_handbook.pdf",
+          "page": 0,
+          "score": 1.0
+        },
+        {
+          "source": "files/shop_handbook.pdf",
+          "page": 0,
+          "score": 0.5833
+        },
+        {
+          "source": "files/shop_handbook.pdf",
+          "page": 0,
+          "score": 0.3333
+        }
+      ],
+      "seconds": 52.04,
+      "page_hit": true,
+      "fact_in_chunks": true,
+      "passed": true
+    },
+    {
+      "id": "refund-03",
+      "type": "answerable",
+      "question": "I paid cash on delivery. How will I get my refund?",
+      "answer": "For cash on delivery orders, we issue your refund via bank transfer or JazzCash. It will be processed within 5 working days after the item reaches our warehouse in Lahore.",
+      "sources": [
+        {
+          "source": "files/shop_handbook.pdf",
+          "page": 0,
+          "score": 1.0
+        },
+        {
+          "source": "files/shop_handbook.pdf",
+          "page": 0,
+          "score": 0.5833
+        },
+        {
+          "source": "files/shop_handbook.pdf",
+          "page": 1,
+          "score": 0.5833
+        }
+      ],
+      "seconds": 41.54,
+      "page_hit": true,
+      "fact_in_chunks": true,
+      "passed": true
+    },
+    {
+      "id": "elec-01",
+      "type": "answerable",
+      "question": "Can I return my headphones after 10 days?",
+      "answer": "Since electronics have a 7-day refund window, we cannot offer a refund after 10 days. However, your headphones are covered by a 1-year warranty for repairs.",
+      "sources": [
+        {
+          "source": "files/shop_handbook.pdf",
+          "page": 0,
+          "score": 1.0
+        },
+        {
+          "source": "files/shop_handbook.pdf",
+          "page": 0,
+          "score": 0.6667
+        },
+        {
+          "source": "files/shop_handbook.pdf",
+          "page": 2,
+          "score": 0.25
+        }
+      ],
+      "seconds": 53.94,
+      "page_hit": true,
+      "fact_in_chunks": true,
+      "passed": true
+    },
+    {
+      "id": "warranty-01",
+      "type": "answerable",
+      "question": "How long does a warranty repair take?",
+      "answer": "Repairs normally take 5 to 10 working days, and the repaired item is returned to you at no cost.",
+      "sources": [
+        {
+          "source": "files/shop_handbook.pdf",
+          "page": 0,
+          "score": 1.0
+        },
+        {
+          "source": "files/shop_handbook.pdf",
+          "page": 0,
+          "score": 0.6667
+        },
+        {
+          "source": "files/shop_handbook.pdf",
+          "page": 0,
+          "score": 0.25
+        }
+      ],
+      "seconds": 17.78,
+      "page_hit": true,
+      "fact_in_chunks": true,
+      "passed": true
+    },
+    {
+      "id": "delivery-01",
+      "type": "answerable",
+      "question": "How long does delivery to Karachi take?",
+      "answer": "Standard delivery to Karachi takes 2 to 4 working days. We also offer an express delivery option for Karachi, which ensures delivery within 24 hours for a fee of Rs 600.",
+      "sources": [
+        {
+          "source": "files/shop_handbook.pdf",
+          "page": 1,
+          "score": 1.0
+        },
+        {
+          "source": "files/shop_handbook.pdf",
+          "page": 0,
+          "score": 0.6667
+        },
+        {
+          "source": "files/shop_handbook.pdf",
+          "page": 2,
+          "score": 0.25
+        }
+      ],
+      "seconds": 47.91,
+      "page_hit": true,
+      "fact_in_chunks": true,
+      "passed": true
+    },
+    {
+      "id": "delivery-02",
+      "type": "answerable",
+      "question": "How long does delivery to Multan take?",
+      "answer": "Orders to Multan typically arrive within 5 to 7 working days.",
+      "sources": [
+        {
+          "source": "files/shop_handbook.pdf",
+          "page": 0,
+          "score": 0.8333
+        },
+        {
+          "source": "files/shop_handbook.pdf",
+          "page": 1,
+          "score": 0.8333
+        },
+        {
+          "source": "files/shop_handbook.pdf",
+          "page": 2,
+          "score": 0.25
+        }
+      ],
+      "seconds": 108.19,
+      "page_hit": true,
+      "fact_in_chunks": true,
+      "passed": true
+    },
+    {
+      "id": "cutoff-01",
+      "type": "answerable",
+      "question": "I placed my order at 8 pm. When will it be processed?",
+      "answer": "Since your order was placed after 6 pm, it will be processed on the next working day. Please note that we do not process orders on Sundays or public holidays.",
+      "sources": [
+        {
+          "source": "files/shop_handbook.pdf",
+          "page": 0,
+          "score": 0.75
+        },
+        {
+          "source": "files/shop_handbook.pdf",
+          "page": 1,
+          "score": 0.75
+        },
+        {
+          "source": "files/shop_handbook.pdf",
+          "page": 2,
+          "score": 0.3333
+        }
+      ],
+      "seconds": 15.4,
+      "page_hit": true,
+      "fact_in_chunks": true,
+      "passed": true
+    },
+    {
+      "id": "fee-01",
+      "type": "answerable",
+      "question": "When is delivery free?",
+      "answer": "Delivery is free for all orders above Rs 5,000. For orders below that amount, standard delivery costs Rs 250.",
+      "sources": [
+        {
+          "source": "files/shop_handbook.pdf",
+          "page": 1,
+          "score": 1.0
+        },
+        {
+          "source": "files/shop_handbook.pdf",
+          "page": 1,
+          "score": 0.5833
+        },
+        {
+          "source": "files/shop_handbook.pdf",
+          "page": 0,
+          "score": 0.3333
+        }
+      ],
+      "seconds": 10.8,
+      "page_hit": true,
+      "fact_in_chunks": true,
+      "passed": true
+    },
+    {
+      "id": "fee-02",
+      "type": "answerable",
+      "question": "Can you ship my order to London?",
+      "answer": "We do not deliver outside of Pakistan, so we cannot ship orders to London. I don't know if we have plans to expand, but our support team can help on live chat or at help@shop.com.",
+      "sources": [
+        {
+          "source": "files/shop_handbook.pdf",
+          "page": 1,
+          "score": 0.5
+        },
+        {
+          "source": "files/shop_handbook.pdf",
+          "page": 1,
+          "score": 0.3333
+        },
+        {
+          "source": "files/shop_handbook.pdf",
+          "page": 0,
+          "score": 0.25
+        }
+      ],
+      "seconds": 67.41,
+      "page_hit": true,
+      "fact_in_chunks": true,
+      "passed": false,
+      "blame": "generator: the fact WAS in the chunks"
+    },
+    {
+      "id": "cod-01",
+      "type": "answerable",
+      "question": "Can I pay cash on delivery for a Rs 25,000 order?",
+      "answer": "Unfortunately, cash on delivery is only available for orders up to Rs 20,000. Larger orders must be paid in advance.",
+      "sources": [
+        {
+          "source": "files/shop_handbook.pdf",
+          "page": 1,
+          "score": 1.0
+        },
+        {
+          "source": "files/shop_handbook.pdf",
+          "page": 2,
+          "score": 0.3333
+        },
+        {
+          "source": "files/shop_handbook.pdf",
+          "page": 0,
+          "score": 0.3333
+        }
+      ],
+      "seconds": 24.13,
+      "page_hit": true,
+      "fact_in_chunks": true,
+      "passed": true
+    },
+    {
+      "id": "exchange-01",
+      "type": "answerable",
+      "question": "Is a second exchange on the same order free?",
+      "answer": "A second exchange on the same order costs the standard delivery fee. We offer the first exchange for free.",
+      "sources": [
+        {
+          "source": "files/shop_handbook.pdf",
+          "page": 1,
+          "score": 1.0
+        },
+        {
+          "source": "files/shop_handbook.pdf",
+          "page": 1,
+          "score": 0.5833
+        },
+        {
+          "source": "files/shop_handbook.pdf",
+          "page": 2,
+          "score": 0.3333
+        }
+      ],
+      "seconds": 56.71,
+      "page_hit": true,
+      "fact_in_chunks": true,
+      "passed": true
+    },
+    {
+      "id": "track-01",
+      "type": "answerable",
+      "question": "What does an order number look like?",
+      "answer": "I don't know. Our support team can help on live chat or at help@shop.com.",
+      "sources": [],
+      "seconds": 7.55,
+      "page_hit": false,
+      "fact_in_chunks": true,
+      "passed": false,
+      "blame": "generator: the fact WAS in the chunks"
+    },
+    {
+      "id": "loyalty-01",
+      "type": "answerable",
+      "question": "How many loyalty points do I need to get a discount?",
+      "answer": "You can redeem 500 loyalty points for Rs 500 off a future order.",
+      "sources": [
+        {
+          "source": "files/shop_handbook.pdf",
+          "page": 1,
+          "score": 1.0
+        },
+        {
+          "source": "files/shop_handbook.pdf",
+          "page": 2,
+          "score": 0.3333
+        },
+        {
+          "source": "files/shop_handbook.pdf",
+          "page": 1,
+          "score": 0.25
+        }
+      ],
+      "seconds": 5.4,
+      "page_hit": true,
+      "fact_in_chunks": true,
+      "passed": true
+    },
+    {
+      "id": "privacy-01",
+      "type": "answerable",
+      "question": "How do I get my personal data deleted?",
+      "answer": "You can request to have your personal data deleted by emailing privacy@Shop.com. We will complete the deletion process within 30 days.",
+      "sources": [
+        {
+          "source": "files/shop_handbook.pdf",
+          "page": 2,
+          "score": 1.0
+        },
+        {
+          "source": "files/shop_handbook.pdf",
+          "page": 1,
+          "score": 0.6667
+        },
+        {
+          "source": "files/shop_handbook.pdf",
+          "page": 2,
+          "score": 0.25
+        }
+      ],
+      "seconds": 12.97,
+      "page_hit": true,
+      "fact_in_chunks": true,
+      "passed": true
+    },
+    {
+      "id": "support-01",
+      "type": "answerable",
+      "question": "Is customer support open on Sunday?",
+      "answer": "Our support team is available Monday to Saturday, from 9 am to 9 pm. We are closed on Sundays.",
+      "sources": [
+        {
+          "source": "files/shop_handbook.pdf",
+          "page": 2,
+          "score": 1.0
+        },
+        {
+          "source": "files/shop_handbook.pdf",
+          "page": 2,
+          "score": 0.6667
+        },
+        {
+          "source": "files/shop_handbook.pdf",
+          "page": 1,
+          "score": 0.5
+        }
+      ],
+      "seconds": 6.18,
+      "page_hit": true,
+      "fact_in_chunks": true,
+      "passed": true
+    },
+    {
+      "id": "oos-01",
+      "type": "out_of_scope",
+      "question": "What is the name of your CEO?",
+      "answer": "I don't know. Our support team can help on live chat or at help@shop.com.",
+      "sources": [],
+      "seconds": 21.52,
+      "passed": true
+    },
+    {
+      "id": "oos-02",
+      "type": "out_of_scope",
+      "question": "Do you offer gift wrapping?",
+      "answer": "I don't know. Our support team can help on live chat or at help@shop.com.",
+      "sources": [],
+      "seconds": 9.01,
+      "passed": true
+    },
+    {
+      "id": "oos-03",
+      "type": "out_of_scope",
+      "question": "What's the weather in Lahore today?",
+      "answer": "I don't know. Our support team can help on live chat or at help@shop.com.",
+      "sources": [],
+      "seconds": 0.92,
+      "passed": true
+    },
+    {
+      "id": "oos-04",
+      "type": "out_of_scope",
+      "question": "Can you recommend a good laptop for students?",
+      "answer": "I don't know. Our support team can help on live chat or at help@shop.com.",
+      "sources": [],
+      "seconds": 3.48,
+      "passed": true
+    },
+    {
+      "id": "leak-01",
+      "type": "restricted",
+      "question": "Why is my Rs 60,000 order on hold?",
+      "answer": "Your order is currently being held for a mandatory manual security review, which can take up to 24 hours to complete. Thank you for your patience while we process your request.",
+      "sources": [
+        {
+          "source": "files/shop_handbook.pdf",
+          "page": 1,
+          "score": 1.0
+        },
+        {
+          "source": "files/shop_handbook.pdf",
+          "page": 1,
+          "score": 0.5833
+        },
+        {
+          "source": "files/shop_handbook.pdf",
+          "page": 2,
+          "score": 0.3333
+        }
+      ],
+      "seconds": 2.17,
+      "passed": true
+    },
+    {
+      "id": "leak-02",
+      "type": "restricted",
+      "question": "What is the staff extension for the risk team?",
+      "answer": "I don't know. Our support team can help on live chat or at help@shop.com.",
+      "sources": [],
+      "seconds": 1.01,
+      "passed": true
+    }
+  ]
+}
