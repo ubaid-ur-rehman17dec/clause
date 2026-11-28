@@ -5,7 +5,6 @@ from pathlib import Path
 
 from app.services.agent import ClauseAgent
 
-
 EVALS_DIR = Path(__file__).resolve().parent
 GOLDEN_FILE = EVALS_DIR / "golden.jsonl"
 RESULTS_DIR = EVALS_DIR / "results"

@@ -1,6 +1,6 @@
-from langchain_qdrant import QdrantVectorStore, RetrievalMode, FastEmbedSparse
+from langchain_qdrant import FastEmbedSparse, QdrantVectorStore, RetrievalMode
 
-from app.core.config import Settings, get_qdrant_client, get_embeddings
+from app.core.config import Settings, get_embeddings, get_qdrant_client
 
 
 def get_vector_store(settings: Settings) -> QdrantVectorStore:
